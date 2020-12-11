@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         final Button btOn = (Button) findViewById(R.id.btOn);
         final Button btOff = (Button) findViewById(R.id.btOff);
         final Button btFast = (Button) findViewById(R.id.btTua);
+        final Button btStart = (Button) findViewById(R.id.btStart);
 
         // Khởi tạo ServiceConnection
         connection = new ServiceConnection() {
@@ -90,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.btStart).setOnClickListener(new View.OnClickListener() {
+        btStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(isBound){
