@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgr"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="268dp"
+        android:layout_height="234dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/ms"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btOn"
+        android:layout_width="70dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="ON" />
+
+    <Button
+        android:id="@+id/btOff"
+        android:layout_width="71dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/btOn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="OFF" />
+
+
+    <Button
+        android:id="@+id/btTua"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btOff"
+        android:layout_below="@+id/btOff"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="23dp"
+        app:icon="@drawable/pause" />
+
+    <Button
+        android:id="@+id/btStart"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btOff"
+        android:layout_below="@+id/btOff"
+        android:layout_marginLeft="-63dp"
+        android:layout_marginTop="20dp"
+        app:icon="@drawable/start" />
+
+</RelativeLayout>
